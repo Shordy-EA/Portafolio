@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- === OPTIMIZACIÓN SEO AVANZADA (Día 1 y 2) === -->
+    <title>Shordy Simbaña | Desarrollador de Software B2B e IA | LyCodeLife</title>
+    <meta name="description" content="Portafolio oficial de Shordy Simbaña, desarrollador de software B2B y especialista en Inteligencia Artificial en Ecuador. Fundador de la agencia LyCodeLife.">
+    <meta name="keywords" content="Shordy Simbaña, Desarrollador de software, Inteligencia Artificial, LyCodeLife, Automatización B2B, Programador Ecuador, Quito">
+    <meta name="author" content="Shordy Simbaña">
+    <meta name="theme-color" content="#040d0a">
+    
+    <!-- === OPTIMIZACIÓN PARA REDES SOCIALES (Open Graph) === -->
+    <meta property="og:title" content="Shordy Simbaña | Software & Inteligencia Artificial">
+    <meta property="og:description" content="Transformando ideas en herramientas B2B con desarrollo a medida y automatización IA en LyCodeLife.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shordyea.github.io/">
+    <meta property="og:image" content="https://shordyea.github.io/imagenes/perfil.png"> 
+    
+    <!-- Tipografía Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Librería para exportar a PDF y capturar Imagen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <!-- === DATOS ESTRUCTURADOS (JSON-LD) PARA GOOGLE Y LLMs === -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Shordy Simbaña",
+      "url": "https://shordyea.github.io/",
+      "jobTitle": "Lead Developer & Fundador",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "LyCodeLife",
+        "url": "https://lycodelife.github.io/LycodeLife/"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "UTEL Universidad"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/shordy/",
+        "https://github.com/ShordyEA"
+      ],
+      "knowsAbout": [
+        "Inteligencia Artificial",
+        "Desarrollo de Software B2B",
+        "Automatización de Procesos",
+        "Python",
+        "Desarrollo Web",
+        "SEO para IA"
+      ]
+    }
+    </script>
+
+    <!-- DATOS ESTRUCTURADOS PARA PREGUNTAS FRECUENTES (Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "¿Qué diferencia a LyCodeLife de las demás agencias de desarrollo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Trabajamos de manera responsable, directa y desarrollamos herramientas de software B2B personalizadas exclusivamente para tus necesidades. No usamos plantillas genéricas; analizamos tu modelo de negocio y construimos soluciones a medida que resuelven problemas reales."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Cómo puede la Inteligencia Artificial (IA) y la automatización mejorar mi empresa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En LyCodeLife integramos modelos de lenguaje (LLMs) y creamos flujos de automatización que eliminan tareas manuales repetitivas. Esto permite procesar datos en segundos, optimizar la atención al cliente y reducir costos operativos, liberando tiempo para que tu equipo se enfoque en el crecimiento estratégico."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Qué tipo de empresas se benefician de sus servicios de software a medida?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nos especializamos en soluciones B2B (Business to Business). Ayudamos principalmente a pymes, startups y empresas tradicionales que buscan la transformación digital, desarrollando desde plataformas web y sistemas de gestión interna (ERP/CRM) hasta integraciones complejas de API."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Cuánto tiempo toma construir una solución tecnológica personalizada?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El cronograma depende de la complejidad de la herramienta tecnológica. Sin embargo, en LyCodeLife aplicamos metodologías ágiles que nos permiten lanzar un Producto Mínimo Viable (MVP) funcional en pocas semanas, asegurando que empieces a ver el retorno de inversión (ROI) rápidamente sin esperas interminables."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Ofrecen soporte continuo y optimización de hardware después del desarrollo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Entendemos que el software necesita una base sólida. Además del desarrollo de la aplicación, brindamos mantenimiento continuo, soporte técnico y optimización de infraestructura de hardware para garantizar que tu ecosistema digital sea seguro, rápido y escalable a largo plazo."
+        }
+      }]
+    }
+    </script>
+
+    <style>
+        /* === PALETA MINIMALISTA Y VARIABLES (Verde Jade Original) === */
+        :root {
+            --bg-page: #040d0a; /* Fondo casi negro con toque Jade */
+            --text-main: #ffffff; /* Blanco puro para máxima legibilidad */
+            --text-muted: #94a3b8; /* Gris azulado/jade suave para textos secundarios */
+            --accent: #10b981; /* Verde Jade brillante */
+            --surface: rgba(16, 185, 129, 0.03); /* Superficie casi invisible */
+            --surface-hover: rgba(16, 185, 129, 0.08); /* Hover sutil */
+            --radius-lg: 32px;
+            --radius-md: 24px;
+            --radius-sm: 16px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        /* === FONDOS ORBES (Efecto Cristal sin bordes) === */
+        .bg-orbs { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -3; overflow: hidden; pointer-events: none; }
+        .orb { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.5; mix-blend-mode: screen; }
+        .orb-1 { width: 600px; height: 600px; background: rgba(16, 185, 129, 0.15); top: -150px; left: -150px; }
+        .orb-2 { width: 700px; height: 700px; background: rgba(5, 150, 105, 0.1); bottom: -250px; right: -150px; }
+
+        a { text-decoration: none; color: inherit; }
+
+        /* === HUD LATERAL (SIDEBAR) === */
+        aside.hud-sidebar {
+            position: sticky;
+            top: 0;
+            width: 290px;
+            height: 100vh;
+            background: rgba(4, 13, 10, 0.8);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            padding: 40px 24px;
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+            overflow: hidden;
+        }
+
+        .hud-profile {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hud-profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 16px;
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.6);
+        }
+
+        .hud-profile h2 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 8px;
+        }
+
+        .hud-profile p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .hud-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            flex-grow: 1;
+        }
+
+        .hud-nav a {
+            display: flex;
+            align-items: center;
+            padding: 14px 20px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+
+        .hud-nav a:hover {
+            background: var(--surface-hover);
+            color: var(--text-main);
+            transform: translateX(8px);
+        }
+
+        .hud-footer {
+            margin-top: auto;
+            padding-top: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hud-footer-text {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 20px;
+            margin-bottom: 0;
+            display: block;
+        }
+
+        .sidebar-flag {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.25;
+            mix-blend-mode: lighten;
+            -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            pointer-events: none;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: var(--text-muted);
+            transition: color 0.3s, transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: transparent;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+            transform: translateY(-4px);
+        }
+
+        /* === CONTENIDO PRINCIPAL === */
+        main.content-area {
+            flex: 1;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 40px;
+            width: 100%;
+        }
+
+        /* === HERO SECTION === */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero-bg-img {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
+            opacity: 0.15; 
+            filter: grayscale(80%) sepia(20%) hue-rotate(100deg);
+        }
+
+        .hero-bg-gradient {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to bottom, rgba(4,13,10,0.2) 0%, rgba(4,13,10,1) 100%);
+            z-index: -1;
+        }
+
+        .hero-photo-main {
+            width: 160px; height: 160px; border-radius: 50%; object-fit: cover;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            margin-bottom: 32px;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.05em;
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 24px;
+        }
+
+        .hero-desc {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 40px; 
+            max-width: 800px;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        /* === TARJETA LYCODELIFE === */
+        .hero-cta-card {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            padding: 24px;
+            border-radius: var(--radius-lg);
+            max-width: 100%;
+            text-align: left;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            margin-bottom: 40px;
+        }
+        .hero-cta-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 40px 80px rgba(16, 185, 129, 0.15);
+            border-color: rgba(16, 185, 129, 0.4);
+        }
+        .hero-cta-card img {
+            width: 180px;
+            height: 140px;
+            border-radius: var(--radius-md);
+            object-fit: cover;
+            flex-shrink: 0;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        .hero-cta-content h3 {
+            font-size: 1.3rem;
+            color: var(--text-main);
+            margin-bottom: 8px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        .hero-cta-content p {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .btn-glow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            background: var(--text-main);
+            color: #000;
+            font-weight: 800;
+            font-size: 0.95rem;
+            border-radius: 100px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+        .btn-glow:hover {
+            transform: scale(1.05);
+            background: var(--accent);
+            color: #000;
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+        }
+
+        /* === SECCIONES GLOBALES === */
+        .section { margin-bottom: 120px; }
+        .section-header { margin-bottom: 50px; text-align: center; }
+        .section-title { font-size: 2.5rem; font-weight: 800; letter-spacing: -0.04em; margin-bottom: 12px; }
+        .section-subtitle { color: var(--text-muted); font-size: 1.15rem; font-weight: 400; max-width: 600px; margin: 0 auto;}
+
+        /* === SOBRE MI === */
+        .about-card {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 4px solid var(--accent);
+            border-radius: var(--radius-lg);
+            padding: 50px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            margin-bottom: 80px;
+        }
+        .about-card h3 { font-size: 1.8rem; font-weight: 800; margin-bottom: 16px; color: var(--text-main); }
+        .about-card p { font-size: 1.15rem; color: var(--text-muted); line-height: 1.8; }
+        .about-card strong { color: var(--text-main); }
+
+        /* === BENTO SKILLS / SERVICIOS === */
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 24px; 
+        }
+
+        .bento-item {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: var(--radius-lg);
+            padding: 48px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bento-item::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(16, 185, 129, 0.06), transparent 40%);
+            opacity: 0; transition: opacity 0.5s; z-index: 0; pointer-events: none;
+        }
+
+        .bento-item:hover { transform: translateY(-8px); background: rgba(255, 255, 255, 0.04); }
+        .bento-item:hover::before { opacity: 1; }
+
+        .bento-item > * { z-index: 1; position: relative; }
+
+        .bento-icon { margin-bottom: 24px; color: var(--accent); }
+        .bento-title { font-weight: 700; font-size: 1.3rem; margin-bottom: 12px; color: var(--text-main); }
+        .bento-desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.7; }
+        
+        /* === TECNOLOGÍAS === */
+        .tech-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            padding: 40px;
+            background: rgba(255,255,255,0.02);
+            border-radius: var(--radius-lg);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            margin-top: 40px;
+        }
+
+        .tech-icon {
+            width: 55px;
+            height: 55px;
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+        }
+
+        .tech-icon:hover {
+            transform: translateY(-8px) scale(1.15);
+            filter: drop-shadow(0 10px 15px rgba(16, 185, 129, 0.4));
+        }
+
+        /* === CERTIFICADOS === */
+        .certs-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .certs-list { display: flex; flex-direction: column; gap: 16px; }
+
+        .cert-item {
+            padding: 24px 30px;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255,255,255,0.02);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            gap: 16px; 
+        }
+
+        /* MINIATURAS DE CERTIFICADOS CON ESQUINAS REDONDAS */
+        .cert-thumb {
+            display: none; 
+            width: 70px;
+            height: 50px;
+            border-radius: 10px; /* Esquinas redondas */
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            flex-shrink: 0;
+            transition: all 0.4s ease;
+        }
+
+        .cert-item:hover, .cert-item.active {
+            background: rgba(16, 185, 129, 0.05);
+            transform: translateX(12px);
+        }
+
+        /* RESPLANDOR LLAMATIVO PARA MINIATURA ACTIVA/HOVER */
+        .cert-item:hover .cert-thumb, .cert-item.active .cert-thumb {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5), 0 0 15px rgba(16, 185, 129, 0.3);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+        }
+
+        /* Ajuste SEO: h4 modificado a h3 para jerarquía */
+        .cert-info h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 6px; color: var(--text-main); }
+        .cert-info p { font-size: 0.95rem; color: var(--text-muted); }
+        .cert-year {
+            font-size: 0.9rem; font-weight: 700; color: var(--accent);
+            background: rgba(16, 185, 129, 0.1); padding: 8px 16px; border-radius: 100px;
+        }
+
+        .cert-preview-area {
+            position: sticky; top: 40px;
+            background: rgba(0,0,0,0.2); 
+            border-radius: var(--radius-lg); padding: 20px; aspect-ratio: 4/3;
+            display: flex; align-items: center; justify-content: center; overflow: hidden;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5); cursor: zoom-in;
+        }
+
+        /* IMAGEN DE VISTA PREVIA: ESQUINAS REDONDAS Y RESPLANDOR */
+        .cert-preview-img { 
+            width: auto; 
+            height: auto; 
+            max-width: 95%; 
+            max-height: 95%;
+            object-fit: contain; 
+            border-radius: 16px; /* Esquinas redondas */
+            border: 1px solid rgba(16, 185, 129, 0.2); /* Borde sutil jade */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 25px rgba(16, 185, 129, 0.15); /* Resplandor llamativo pero suave */
+            transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease; 
+        }
+        
+        .cert-preview-area:hover .cert-preview-img { 
+            transform: scale(1.03); 
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6), 0 0 40px rgba(16, 185, 129, 0.3); /* Resplandor más fuerte en hover */
+        }
+
+        .btn-more-certs {
+            margin-top: 16px; width: 100%; text-align: center; padding: 20px;
+            font-size: 1rem; font-weight: 600; color: var(--text-muted); cursor: pointer;
+            background: rgba(255,255,255,0.02); 
+            border: none;
+            border-radius: var(--radius-md); transition: all 0.3s;
+        }
+        .btn-more-certs:hover { background: rgba(255,255,255,0.05); color: var(--text-main); transform: translateY(-2px); }
+
+        /* === TESTIMONIOS (REVIEWS) === */
+        .reviews-container { display: flex; justify-content: center; width: 100%; }
+        .review-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(16, 185, 129, 0.1);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            text-align: left;
+            position: relative;
+        }
+        .review-stars { color: #facc15; font-size: 1.4rem; margin-bottom: 16px; letter-spacing: 2px;}
+        .review-text { font-size: 1.15rem; color: var(--text-main); line-height: 1.7; font-style: italic; margin-bottom: 32px; font-weight: 500;}
+        .review-author { display: flex; align-items: center; gap: 16px; }
+        .review-avatar { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
+        
+        /* Ajuste SEO: Modificado h4 a strong en CSS para mantener la misma vista */
+        .review-author-info strong { font-size: 1.1rem; color: var(--text-main); margin-bottom: 2px; display: block;}
+        .review-author-info span { font-size: 0.9rem; color: var(--text-muted);}
+        .google-icon { position: absolute; top: 40px; right: 40px; width: 24px; opacity: 0.5; }
+
+        /* === FAQ / PREGUNTAS FRECUENTES === */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .faq-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(16, 185, 129, 0.1);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            border-color: rgba(16, 185, 129, 0.3);
+            background: rgba(255, 255, 255, 0.04);
+        }
+        .faq-summary {
+            padding: 24px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-main);
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-summary::-webkit-details-marker { display: none; }
+        .faq-summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--accent);
+            transition: transform 0.3s ease;
+            font-weight: 400;
+        }
+        .faq-item[open] .faq-summary::after {
+            transform: rotate(45deg);
+        }
+        .faq-content {
+            padding: 0 24px 24px 24px;
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* === PROYECTOS === */
+        .project-card {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 32px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            transition: transform 0.4s ease;
+            align-items: center;
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.04);
+        }
+        .project-img-wrapper {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .project-img-wrapper img {
+            width: 100%;
+            height: auto;
+            object-fit: contain; 
+            transition: transform 0.5s ease;
+            cursor: zoom-in;
+        }
+        .project-card:hover .project-img-wrapper img { transform: scale(1.02); }
+        .project-info h3 { font-size: 1.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 4px; letter-spacing: -0.02em;}
+        .project-role { font-size: 0.95rem; font-weight: 700; color: var(--accent); margin-bottom: 16px; display: inline-block; }
+        
+        .project-info ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+        .project-info li { 
+            position: relative; 
+            padding-left: 24px; 
+            font-size: 0.95rem; 
+            color: var(--text-muted); 
+            line-height: 1.5; 
+            font-weight: 400;
+        }
+        .project-info li::before { 
+            content: '→'; 
+            position: absolute; 
+            left: 0; 
+            top: 0; 
+            color: var(--accent); 
+            font-weight: 800; 
+            font-size: 1.1rem; 
+            line-height: 1.5;
+        }
+        .project-info li strong { color: var(--text-main); font-weight: 600; margin-right: 4px;}
+
+        /* Estilo para botón secundario (enlaces de proyectos) */
+        .btn-outline {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 10px 20px; font-size: 0.95rem; font-weight: 600;
+            color: var(--text-main); background: transparent;
+            border: 1px solid rgba(255,255,255,0.2); border-radius: 100px;
+            cursor: pointer; transition: all 0.3s ease; margin-top: 24px;
+            text-decoration: none; width: fit-content;
+        }
+        .btn-outline:hover {
+            border-color: var(--accent); color: var(--accent); background: rgba(16, 185, 129, 0.05); transform: translateY(-2px);
+        }
+
+        /* === EXPERIENCIA === */
+        .timeline-container {
+            display: block;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline { position: relative; padding-left: 20px; }
+        .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--accent) 0%, rgba(16, 185, 129, 0) 100%); opacity: 0.3;}
+        
+        .timeline-item { position: relative; margin-bottom: 60px; }
+        .timeline-item:last-child { margin-bottom: 0; }
+        .timeline-item::after {
+            content: ''; position: absolute; left: -25px; top: 8px; width: 12px; height: 12px;
+            border-radius: 50%; background: var(--accent); box-shadow: 0 0 15px var(--accent);
+        }
+        .timeline-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 6px; color: var(--text-main); }
+        .timeline-company { font-size: 1rem; color: var(--accent); font-weight: 600; margin-bottom: 16px; display: inline-block; }
+        .timeline-desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.7; font-weight: 400; }
+
+        /* CTA Final Integrado */
+        .cta-box {
+            background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+            padding: 80px 40px; border-radius: var(--radius-lg);
+            text-align: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .btn-primary { background: var(--text-main); color: #000; padding: 18px 36px; border-radius: 100px; font-weight: 800; font-size: 1.1rem; cursor: pointer; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); border: none; }
+        .btn-primary:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(255,255,255,0.15); background: var(--accent); color: #000; }
+        
+        /* === MODALES === */
+        .modal {
+            display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(10px);
+            align-items: center; justify-content: center; opacity: 0; transition: opacity 0.4s ease;
+        }
+        .modal.active { display: flex; opacity: 1; }
+        
+        /* Ajuste para modal de Hoja de Vida (scrollable) */
+        .modal.resume-modal {
+            align-items: flex-start;
+            overflow-y: auto;
+            padding: 40px 20px;
+        }
+
+        /* IMAGEN EXPANDIDA EN EL MODAL: ESQUINAS REDONDAS Y RESPLANDOR */
+        .modal-content { 
+            max-width: 85%; 
+            max-height: 85vh; 
+            border-radius: 16px; /* Esquinas redondas en modal */
+            box-shadow: 0 20px 60px rgba(0,0,0,0.8), 0 0 50px rgba(16, 185, 129, 0.2); /* Resplandor llamativo suave */
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+        
+        /* Estilos de flechas de navegación de Galería */
+        .nav-btn {
+            position: absolute; top: 50%; transform: translateY(-50%);
+            font-size: 40px; color: var(--text-muted); cursor: pointer;
+            padding: 20px; user-select: none; transition: color 0.3s, transform 0.3s;
+            z-index: 10001;
+        }
+        .nav-btn:hover { color: var(--accent); transform: translateY(-50%) scale(1.1); }
+        .prev-btn { left: 2%; }
+        .next-btn { right: 2%; }
+
+        .form-box {
+            background: #0a1813; padding: 50px; border-radius: var(--radius-lg);
+            width: 90%; max-width: 500px; position: relative;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+        }
+        .close-btn { position: absolute; top: 24px; right: 30px; font-size: 32px; cursor: pointer; color: var(--text-muted); transition: color 0.3s;}
+        .close-btn:hover { color: var(--accent); }
+        
+        /* Inputs ultra-modernos */
+        .form-input { 
+            width: 100%; padding: 16px 0; margin-bottom: 24px; 
+            border: none; border-bottom: 2px solid rgba(255,255,255,0.1); 
+            border-radius: 0; font-family: inherit; font-size: 1.1rem;
+            background: transparent; color: var(--text-main);
+            transition: border-color 0.3s;
+        }
+        .form-input:focus { outline: none; border-bottom-color: var(--accent); }
+        .form-input::placeholder { color: rgba(255,255,255,0.3); }
+
+        /* === ESTILOS HOJA DE VIDA (DOCUMENTO PDF) === */
+        /* Restaurado para heredar el var(--accent) Verde Jade */
+        .resume-controls {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            max-width: 794px;
+            margin: 0 auto 20px;
+            background: rgba(0,0,0,0.8);
+            padding: 15px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            gap: 16px;
+        }
+        .resume-document {
+            background: #ffffff;
+            color: #111827;
+            width: 100%;
+            max-width: 794px; /* Ancho optimizado para tamaño A4 exacto */
+            margin: 0 auto;
+            padding: 30px 40px; /* Reducido para ganar espacio vertical */
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(16, 185, 129, 0.2); /* Sombra jade para el doc flotante */
+            font-family: 'Inter', sans-serif;
+            text-align: left;
+            line-height: 1.35; /* Interlineado más compacto */
+        }
+        .resume-document h1, .resume-document h2, .resume-document h3 { color: #111827; }
+        .resume-header { border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 16px; }
+        .resume-header h1 { font-size: 2rem; font-weight: 800; margin-bottom: 2px; letter-spacing: -0.03em; }
+        .resume-header p { font-size: 0.9rem; color: #4b5563; font-weight: 600; margin-bottom: 8px; }
+        .resume-contact { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 0.8rem; color: #374151; font-weight: 500;}
+        .resume-contact span { display: flex; align-items: center; gap: 4px; }
+        
+        /* Layout de 2 columnas para un diseño de 1 página compacto */
+        .resume-body { display: grid; grid-template-columns: 32% 1fr; gap: 20px; align-items: start; }
+        
+        .resume-section { margin-bottom: 16px; }
+        .resume-section:last-child { margin-bottom: 0; }
+        .resume-section h2 { font-size: 1rem; font-weight: 800; color: var(--accent); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #e5e7eb; padding-bottom: 4px;}
+        
+        .resume-item { margin-bottom: 10px; }
+        .resume-item:last-child { margin-bottom: 0; }
+        .resume-item-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
+        .resume-item-title { font-size: 0.95rem; font-weight: 800; color: #111827;}
+        .resume-item-subtitle { font-size: 0.85rem; color: var(--accent); font-weight: 700; display: block;}
+        .resume-item-date { font-size: 0.8rem; color: #6b7280; font-weight: 600; text-align: right; white-space: nowrap; margin-left: 8px;}
+        .resume-item-desc { font-size: 0.85rem; color: #374151; }
+        
+        .resume-skills-grid { display: flex; flex-direction: column; gap: 8px; }
+        .resume-list { padding-left: 14px; margin-top: 2px; font-size: 0.85rem; color: #374151; display: flex; flex-direction: column; gap: 2px;}
+        .resume-list li { padding-left: 2px; }
+        
+        /* Botón descargar Imagen */
+        .btn-capture {
+            background: transparent; color: var(--text-muted); border: 1px dashed rgba(255,255,255,0.2); 
+            padding: 12px 24px; border-radius: 100px; font-weight: 600; cursor: pointer; transition: all 0.3s;
+            margin-top: 24px; display: inline-flex; align-items: center; gap: 8px;
+        }
+        .btn-capture:hover { background: rgba(255,255,255,0.05); color: var(--text-main); border-color: var(--accent); }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 1000px) {
+            .hero-title { font-size: 3.5rem; }
+            .bento-grid { grid-template-columns: 1fr 1fr; }
+            .project-card { grid-template-columns: 1fr; gap: 24px; padding: 24px; }
+            .hero-cta-card { margin: 0 20px 40px; }
+            
+            .resume-document { padding: 30px 20px; }
+            .resume-header h1 { font-size: 2rem; }
+            .resume-body { grid-template-columns: 1fr; gap: 20px; } /* Se apila en móvil */
+            .resume-skills-grid { grid-template-columns: 1fr; }
+            .resume-item-header { flex-direction: column; justify-content: flex-start; align-items: flex-start;}
+            .resume-item-date { text-align: left; margin-bottom: 8px; margin-left: 0; }
+        }
+
+        @media (max-width: 800px) {
+            body { flex-direction: column; }
+            
+            /* HUD oculto totalmente en móviles */
+            aside.hud-sidebar { display: none !important; }
+
+            main.content-area { padding: 0; width: 100%; }
+            .content-wrapper { padding: 40px 20px; }
+
+            .hero-section { text-align: left; min-height: 100vh; padding: 100px 24px 80px; align-items: flex-start; justify-content: center;}
+            
+            .hero-title { font-size: 3rem; text-align: center; align-self: center; width: 100%; }
+            .hero-subtitle { text-align: left; }
+            .hero-desc { text-align: left; margin-bottom: 32px; }
+            .hero-photo-main { align-self: center; }
+            
+            /* Tarjeta LyCodeLife Móvil */
+            .hero-cta-card { flex-direction: column; text-align: center; padding: 24px; margin: 0 0 40px 0; }
+            .hero-cta-card img { width: 100%; height: 180px; }
+
+            .certs-container { grid-template-columns: 1fr; gap: 24px; }
+            .cert-preview-area { display: none; }
+            
+            /* Ajustes para ver imagen en móvil */
+            .cert-thumb { display: block; }
+            .cert-year { display: none; } 
+            .cert-item { padding: 16px 20px; justify-content: flex-start; }
+            
+            .bento-grid { grid-template-columns: 1fr; }
+            
+            .tech-icon { width: 45px; height: 45px; }
+            
+            .section-header { text-align: left; }
+            .cta-box { padding: 40px 24px; text-align: left; align-items: flex-start;}
+            
+            .nav-btn { padding: 10px; font-size: 30px; }
+
+            .resume-document { padding: 30px 20px; }
+            .resume-header h1 { font-size: 2rem; }
+            .resume-skills-grid { grid-template-columns: 1fr; }
+            .resume-item-header { flex-direction: column; justify-content: flex-start; align-items: flex-start;}
+            .resume-item-date { text-align: left; margin-bottom: 8px; }
+        }
+
+        /* === FUERZA ESTILOS DE PC PARA EL PDF GENERADO DESDE MÓVIL === */
+        /* Estas clases solo se aplican temporalmente durante la descarga */
+        .pdf-export-mode {
+            width: 794px !important;
+            min-width: 794px !important; /* Mantiene el tamaño riguroso */
+            max-width: 794px !important;
+            margin: 0 !important; 
+            padding: 30px 40px !important;
+            background: #ffffff !important;
+            box-sizing: border-box !important;
+            position: relative !important;
+            transform: none !important;
+        }
+        .pdf-export-mode .resume-body {
+            display: grid !important;
+            grid-template-columns: 32% 1fr !important;
+            gap: 20px !important;
+        }
+        .pdf-export-mode .resume-item-header {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: space-between !important;
+            align-items: baseline !important;
+        }
+        .pdf-export-mode .resume-item-date {
+            text-align: right !important;
+            margin-bottom: 0 !important;
+            margin-left: 8px !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- === FONDOS ORBES (Efecto Cristal suave) === -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <!-- === HUD LATERAL (SIDEBAR) === -->
+    <aside class="hud-sidebar">
+        <div class="hud-profile">
+            <!-- SEO: Atributo alt descriptivo añadido -->
+            <img src="imagenes/avatar.png" alt="Avatar Shordy Simbaña - Desarrollador en LyCodeLife" onerror="this.src='https://placehold.co/400x400/0a1813/10b981?text=Shordy'">
+        </div>
+        
+        <nav class="hud-nav">
+            <!-- SEO: Atributos title añadidos para contexto de enlazado interno -->
+            <a href="#sobre-mi" title="Acerca de Shordy Simbaña">Sobre Mí</a>
+            <a href="#proyectos" title="Proyectos de software desarrollados">Proyectos</a>
+            <a href="#certificados" title="Certificados de tecnología y programación">Credenciales</a>
+            <a href="#servicios" title="Servicios de Desarrollo de Software a medida">Servicios</a>
+            <a href="#experiencia" title="Experiencia laboral y LyCodeLife">Experiencia</a>
+            <a href="#testimonios" title="Testimonios de clientes satisfechos">Testimonios</a>
+            <a href="#faq" title="Preguntas Frecuentes sobre mis servicios">FAQ</a>
+        </nav>
+
+        <div class="hud-footer">
+            <div class="social-links">
+                <a href="https://github.com/ShordyEA" target="_blank" aria-label="GitHub de Shordy Simbaña"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                <a href="https://www.linkedin.com/in/shordy/" target="_blank" aria-label="LinkedIn de Shordy Simbaña"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                <a href="mailto:shordy46.58@gmail.com" aria-label="Enviar Email a Shordy Simbaña"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+            </div>
+            <span class="hud-footer-text">Talento orgullosamente Ecuatoriano</span>
+        </div>
+        
+        <!-- Imagen de la bandera degradada al fondo de la barra lateral -->
+        <img src="imagenes/bandera.png" alt="Bandera de Ecuador - Programador de Quito" class="sidebar-flag" onerror="this.src='https://images.unsplash.com/photo-1590089415225-401ed6f9db8e?q=80&w=600&auto=format&fit=crop'">
+    </aside>
+
+    <!-- === CONTENIDO PRINCIPAL === -->
+    <main class="content-area">
+        
+        <!-- INTRODUCCIÓN (Hero Section) -->
+        <!-- SEO: Uso de etiqueta semántica <header> -->
+        <header class="hero-section">
+            <div class="hero-bg-img"></div>
+            <div class="hero-bg-gradient"></div>
+            
+            <img src="imagenes/perfil.png" alt="Foto de Shordy Simbaña - Experto B2B" class="hero-photo-main" onerror="this.src='https://placehold.co/400x400/0a1813/10b981?text=Shordy'">
+            
+            <h1 class="hero-title">Shordy Simbaña</h1>
+            <h2 class="hero-subtitle">Desarrollador de soluciones personalizadas con IA</h2>
+            <p class="hero-desc">
+                Estudiante de la Licenciatura en Ingeniería en Sistemas Computacionales por UTEL. Especializado en transformar tareas manuales en flujos automatizados de alto impacto para negocios.
+            </p>
+
+            <!-- Botones principales -->
+            <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; z-index: 10;">
+                <a href="#sobre-mi" class="btn-outline" style="margin-top: 0;" title="Leer más acerca de mí">
+                    Explorar mi perfil
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 6px;"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+                </a>
+                <button onclick="openResumeModal()" class="btn-outline" style="margin-top: 0; border-color: var(--accent); color: var(--accent); background: rgba(16,185,129,0.05);" title="Visualizar documento de Hoja de Vida">
+                    Ver hoja de vida
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 6px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                </button>
+                <a href="https://github.com/ShordyEA" target="_blank" class="btn-outline" style="margin-top: 0;" title="Revisar mi código en GitHub">
+                    Ver Repositorio
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 6px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+            </div>
+        </header>
+
+        <article class="content-wrapper">
+            
+            <!-- SECCIÓN 1: SOBRE MÍ HUMANIZADO (Reescrito y persuasivo) -->
+            <section class="section" id="sobre-mi">
+                <div class="about-card">
+                    <!-- SEO: Cambiado de h3 a h2 para respetar la jerarquía -->
+                    <h2>Más que código, visión a futuro.</h2>
+                    <p>
+                        ¡Hola! Soy Shordy. Para mí, la tecnología no se trata solo de escribir código o arreglar computadoras, sino de construir soluciones que hagan la vida más fácil. Veo a las máquinas como las aliadas perfectas para transformar ideas sueltas en herramientas que realmente ayuden a tu negocio a crecer.<br><br>
+                        
+                        Creo firmemente que la base de cualquier gran proyecto no es solo la técnica, sino <strong>los valores, la ética y la claridad</strong>. Soy una persona responsable, que trabaja con iniciativa propia y que se pone la camiseta de tu equipo. Si buscas a alguien que no solo ejecute, sino que entienda tu visión, se comprometa al 100% y te brinde tranquilidad desde el día uno, estás en el lugar correcto.
+                    </p>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2: PROYECTOS DESTACADOS -->
+            <section class="section" id="proyectos">
+                <div class="section-header">
+                    <h2 class="section-title">Proyectos Destacados</h2>
+                    <p class="section-subtitle">Construyendo ideas, uniendo tecnología y negocios.</p>
+                </div>
+                
+                <div style="display: flex; flex-direction: column; gap: 40px;">
+                    <!-- Proyecto Nuevo: WhatsApp Life -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="imagenes/proyectos/whats.png" alt="Proyecto de Software: WhatsApp Life" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x600/0a1813/10b981?text=WhatsApp+Life'">
+                        </div>
+                        <div class="project-info">
+                            <h3>WhatsApp Life (by LyCodeLife)</h3>
+                            <span class="project-role">Automatización B2B & Sistema Anti-Ban</span>
+                            <ul>
+                                <li><strong>Software avanzado:</strong> Automatiza envíos masivos en WhatsApp Web operando directamente y sin depender de la API oficial.</li>
+                                <li><strong>Secuencias multimedia:</strong> Crea cadenas completas de mensajes enviando texto, imágenes, videos y documentos en un solo flujo.</li>
+                                <li><strong>Gestión Inteligente:</strong> Importa listas de contactos desde bases de datos (Excel) y usa plantillas personalizadas para que cada contacto se sienta bien atendido y humano.</li>
+                                <li><strong>Sistema Anti-Ban:</strong> Protege tu número con un motor de comportamiento orgánico que simula tiempos dinámicos de tipeo, pausas inter-mensajes y descansos naturales.</li>
+                                <li><strong>UX Premium:</strong> Experiencia de usuario totalmente moderna, minimalista y sin complicaciones técnicas.</li>
+                            </ul>
+                            <a href="https://github.com/ShordyEA/WhatsApp-Life" target="_blank" class="btn-outline" title="Ver el código de WhatsApp Life">
+                                Ver Repositorio
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 1: Hackathon -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="imagenes/proyectos/tienda nube.png" alt="Hackathon UTEL Tiendanube por Shordy Simbaña" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x600/0a1813/10b981?text=Proyecto+NubIA'">
+                        </div>
+                        <div class="project-info">
+                            <h3>Hackathon - UTEL / Tiendanube</h3>
+                            <span class="project-role">Lead Developer & Project Manager (Marzo 2026)</span>
+                            <ul>
+                                <li><strong>Estrategia y equipo:</strong> Alineé a las áreas de IA, negocios e infraestructura para trabajar con máxima agilidad.</li>
+                                <li><strong>Liderazgo técnico:</strong> Lideré el frontend y la arquitectura en GitHub, asegurando la calidad del código.</li>
+                                <li><strong>Impulso con IA:</strong> Utilicé Gemini CLI para agilizar el desarrollo y la toma de decisiones bajo presión.</li>
+                                <li><strong>Nacimiento de "NubIA":</strong> Diseñé la arquitectura de este asistente inteligente para emprendedores.</li>
+                            </ul>
+                            <a href="https://github.com/ShordyEA/hackathon-TiendaNube/tree/main" target="_blank" class="btn-outline" title="Ver el código del Hackathon">
+                                Ver Repositorio
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2: MAATE -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="imagenes/proyectos/mate.png" alt="Proyecto de Digitalización del Ministerio del Ambiente MAATE" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x600/0a1813/10b981?text=Proyecto+MAATE'">
+                        </div>
+                        <div class="project-info">
+                            <h3>Digitalización Histórica - MAATE</h3>
+                            <span class="project-role">Gestión de Datos & Archivo (Proyecto de 4 meses)</span>
+                            <ul>
+                                <li><strong>Rescate patrimonial:</strong> Nos sumergimos en la historia para extraer y preservamos información invaluable, ¡algunos documentos databan del año 1850!</li>
+                                <li><strong>Estructuración de datos:</strong> Construimos una sólida base de datos consolidando miles de registros, cédulas y hojas de vida de ex-empleados.</li>
+                                <li><strong>Transformación digital:</strong> Ayudé a modernizar el archivo físico, convirtiendo enormes cantidades de papel en información estructurada, segura y de fácil acceso.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 3: CREDENCIALES (Certificados) -->
+            <section class="section" id="certificados">
+                <div class="section-header">
+                    <h2 class="section-title">Credenciales</h2>
+                    <p class="section-subtitle">Historial académico verificado. Pasa el cursor para ver los detalles.</p>
+                </div>
+
+                <div class="certs-container">
+                    <!-- Lista de textos -->
+                    <div class="certs-list" id="certList">
+                        
+                        <div class="cert-item active" data-img="imagenes/certificado-utel.png" onclick="openGallery(this)">
+                            <img src="imagenes/certificado-utel.png" alt="Certificado Asesoría Computación UTEL" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <div class="cert-info">
+                                <!-- SEO: Cambiado h4 a h3 para mantener jerarquía H2 -> H3 -->
+                                <h3>Asesoría en Ing. en Computación</h3>
+                                <p>Utel Universidad</p>
+                            </div>
+                            <span class="cert-year">2025</span>
+                        </div>
+
+                        <!-- NUEVA CERTIFICACIÓN AÑADIDA: SEO -->
+                        <div class="cert-item" data-img="imagenes/seo.png" onclick="openGallery(this)">
+                            <img src="imagenes/seo.png" alt="Certificado Curso de SEO 2026 para IA y Google" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <div class="cert-info">
+                                <h3>SEO para IA y Google</h3>
+                                <p>BIG School / BIGSEO</p>
+                            </div>
+                            <span class="cert-year">2026</span>
+                        </div>
+
+                        <div class="cert-item" data-img="imagenes/certificado-hackathon.png" onclick="openGallery(this)">
+                            <img src="imagenes/certificado-hackathon.png" alt="Certificado Hackathon Tiendanube" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <div class="cert-info">
+                                <h3>Hackathon: Innovación E-commerce</h3>
+                                <p>Utel & Tiendanube</p>
+                            </div>
+                            <span class="cert-year">2026</span>
+                        </div>
+
+                        <div class="cert-item" data-img="imagenes/certificado-forense.png" onclick="openGallery(this)">
+                            <img src="imagenes/certificado-forense.png" alt="Certificado Informática Forense" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <div class="cert-info">
+                                <h3>Informática Forense</h3>
+                                <p>Academia Progenios</p>
+                            </div>
+                            <span class="cert-year">2025</span>
+                        </div>
+
+                        <!-- Certificados Ocultos inicialmente -->
+                        <div class="cert-item hidden-cert" style="display: none;" data-img="imagenes/certificado-emotos.png" onclick="openGallery(this)">
+                            <img src="imagenes/certificado-emotos.png" alt="Certificado de Customer Experience" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <div class="cert-info">
+                                <h3>Customer Experience y Asistencia</h3>
+                                <p>Remotos Academy / CertiProf</p>
+                            </div>
+                            <span class="cert-year">2025</span>
+                        </div>
+
+                        <div class="cert-item hidden-cert" style="display: none;" data-img="imagenes/certificado-bionics.png" onclick="openGallery(this)">
+                            <img src="imagenes/certificado-bionics.png" alt="Certificado Bionics" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <div class="cert-info"><h3>Intro. to Bionic Prostheses</h3><p>P4H Bionics</p></div><span class="cert-year">2024</span>
+                        </div>
+                        <div class="cert-item hidden-cert" style="display: none;" data-img="imagenes/certificado-raee-1.png" onclick="openGallery(this)">
+                            <img src="imagenes/certificado-raee-1.png" alt="Certificado Gestión RAEE 1" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <div class="cert-info"><h3>Gestión de RAEE (Parte 1)</h3><p>Ministerio del Ambiente</p></div><span class="cert-year">2025</span>
+                        </div>
+                        <div class="cert-item hidden-cert" style="display: none;" data-img="imagenes/certificado-raee-2.png" onclick="openGallery(this)">
+                            <img src="imagenes/certificado-raee-2.png" alt="Certificado Gestión RAEE 2" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <div class="cert-info"><h3>Gestión de RAEE (Parte 2)</h3><p>Ministerio del Ambiente</p></div><span class="cert-year">2025</span>
+                        </div>
+                        
+                        <button class="btn-more-certs" id="btnToggleCerts" onclick="toggleCerts()">+ Ver 4 credenciales más</button>
+                    </div>
+
+                    <!-- Área de previsualización (Solo visible en Desktop) -->
+                    <div class="cert-preview-area" onclick="openLightboxPreview()">
+                        <img id="mainPreviewImg" src="imagenes/certificado-utel.png" alt="Vista previa del certificado" class="cert-preview-img" onerror="this.src='https://placehold.co/600x400/0a1813/10b981?text=Certificado'">
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 4: MIS SERVICIOS -->
+            <section class="section" id="servicios">
+                <div class="section-header">
+                    <h2 class="section-title">Mis Servicios</h2>
+                    <p class="section-subtitle">Soluciones tecnológicas puntuales para escalar y modernizar tu empresa.</p>
+                </div>
+                
+                <div class="bento-grid">
+                    <!-- Servicio 1 -->
+                    <div class="bento-item" onmousemove="handleMouseMove(event, this)">
+                        <svg class="bento-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        <h3 class="bento-title">Automatización B2B</h3>
+                        <p class="bento-desc">Eliminamos el trabajo manual y repetitivo. Creo scripts y flujos de trabajo a medida que ahorran horas a tu equipo y reducen los errores humanos a cero.</p>
+                    </div>
+                
+                    <!-- Servicio 2 -->
+                    <div class="bento-item" onmousemove="handleMouseMove(event, this)">
+                        <svg class="bento-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        <h3 class="bento-title">Desarrollo a Medida</h3>
+                        <p class="bento-desc">Si tienes una idea compleja, construyo la aplicación web o el sistema exacto que necesitas. Arquitecturas limpias, modulares y sin código basura.</p>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <div class="bento-item" onmousemove="handleMouseMove(event, this)">
+                        <svg class="bento-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        <h3 class="bento-title">Integración de IA (LLMs)</h3>
+                        <p class="bento-desc">Llevo tu negocio al siguiente nivel conectando modelos de Inteligencia Artificial para crear asistentes inteligentes y procesar datos rápidamente.</p>
+                    </div>
+
+                    <!-- Servicio 4 -->
+                    <div class="bento-item" onmousemove="handleMouseMove(event, this)">
+                        <svg class="bento-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect></svg>
+                        <h3 class="bento-title">Soporte Hardware</h3>
+                        <p class="bento-desc">Aseguro que tu infraestructura física nunca te detenga. Mantenimiento preventivo, diagnóstico y optimización de equipos informáticos empresariales.</p>
+                    </div>
+                </div>
+
+                <!-- TECNOLOGÍAS & HERRAMIENTAS -->
+                <div class="tech-container">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" class="tech-icon" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" title="CSS3" class="tech-icon" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" title="Python" class="tech-icon" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" title="Linux" class="tech-icon" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg" alt="Windows" title="Windows" class="tech-icon" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" title="VS Code" class="tech-icon" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud" title="Google Cloud" class="tech-icon" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Microsoft_365_%282022%29.svg/256px-Microsoft_365_%282022%29.svg.png" alt="Microsoft 365" title="Microsoft 365" class="tech-icon" onerror="this.src='https://api.iconify.design/logos:microsoft-icon.svg'" />
+                    <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="Google Gemini" title="Google Gemini" class="tech-icon" />
+                </div>
+            </section>
+
+            <!-- SECCIÓN 5: EXPERIENCIA & AGENCIA B2B -->
+            <section class="section" id="experiencia">
+                <div class="section-header">
+                    <h2 class="section-title">Experiencia & Agencia</h2>
+                    <p class="section-subtitle">De mi trayectoria técnica hacia la creación de soluciones empresariales.</p>
+                </div>
+                
+                <div class="hero-cta-card">
+                    <img src="imagenes/lycodelife.png" alt="LyCodeLife Agencia" onerror="this.src='https://placehold.co/400x300/0a1813/10b981?text=LyCodeLife'">
+                    <div class="hero-cta-content">
+                        <h3>Descubre LyCodeLife</h3>
+                        <p>Además de mi perfil técnico, dirijo mi propia agencia, donde ofrezco <strong>servicios de creación de software B2B personalizados</strong>. Explora demos interactivas y descubre cómo transformo ideas en tecnología funcional para empresas.</p>
+                        <a href="https://lycodelife.github.io/LycodeLife/" target="_blank" class="btn-glow" title="Visitar la web de LyCodeLife">
+                            Visitar LyCodeLife
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left:4px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Timeline de Experiencia Profesional -->
+                <div class="timeline-container">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3 class="timeline-title">Fundador & Lead Developer</h3>
+                            <a href="https://lycodelife.github.io/LycodeLife/" target="_blank" class="timeline-company" title="Enlace a LyCodeLife">LycodeLife ↗</a>
+                            <p class="timeline-desc">Arquitectura B2B, desarrollo Full-Stack y automatización de procesos internos utilizando Inteligencia Artificial.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="timeline-title">Consultor Independiente</h3>
+                            <span class="timeline-company" style="text-decoration: none;">Proyectos Autónomos</span>
+                            <p class="timeline-desc">Desarrollo UI/UX, integración de modelos de IA y optimización de hardware a medida para clientes locales.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="timeline-title">Asistente de Archivo</h3>
+                            <span class="timeline-company" style="text-decoration: none;">Ministerio del Ambiente (Jóvenes en Acción)</span>
+                            <p class="timeline-desc">En febrero de 2025 participé en el programa Jóvenes en Acción. Trabajé en el área de archivo, donde desarrollé habilidades para gestionar, crear y ordenar documentos históricos de gran importancia.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 6: TESTIMONIOS -->
+            <section class="section" id="testimonios">
+                <div class="section-header">
+                    <h2 class="section-title">Lo que dicen mis clientes</h2>
+                    <p class="section-subtitle">Reseñas reales verificadas a través de Google.</p>
+                </div>
+
+                <div class="reviews-container">
+                    <div class="review-card">
+                        <!-- Icono de Google Decorativo -->
+                        <svg class="google-icon" viewBox="0 0 24 24" fill="var(--text-muted)"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Una experiencia increíble, me ahorré horas y soy más productiva gracias a LyCodeLife recomendadisimoooo"</p>
+                        
+                        <div class="review-author">
+                            <img src="imagenes/g/1.png" alt="Reseña de Dayana Velasco en Google" class="review-avatar" onerror="this.src='https://placehold.co/100x100/10b981/ffffff?text=D'">
+                            <div class="review-author-info">
+                                <!-- SEO: Cambiado de h4 a strong -->
+                                <strong>Dayana Velasco</strong>
+                                <span>1 opinión en Google</span>
+                            </div>
+                        </div>
+
+                        <!-- Botones de Google -->
+                        <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+                            <a href="https://www.google.com/search?q=LyCodeLife" target="_blank" class="btn-outline" style="margin-top: 0; padding: 8px 16px; font-size: 0.85rem;" title="Ver opiniones en Google">Ver en Google</a>
+                            <a href="https://www.google.com/search?q=LyCodeLife" target="_blank" class="btn-outline" style="margin-top: 0; padding: 8px 16px; font-size: 0.85rem; border-color: var(--text-muted); color: var(--text-muted);" title="Añadir una opinión a LyCodeLife">Dejar una opinión</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 7: CALL TO ACTION FINAL -->
+            <section class="section" style="margin-bottom: 60px;">
+                <div class="cta-box">
+                    <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.04em; color: var(--text-main);">¿Trabajamos juntos?</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 40px; font-size: 1.1rem; line-height: 1.6;">Hablemos de código, IA o cómo optimizar la tecnología de tu negocio.</p>
+                    <button class="btn btn-primary" style="width: 100%; justify-content: center; padding: 20px;" onclick="openContact()">Contactar ahora</button>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 8: PREGUNTAS FRECUENTES (SEO / IA) -->
+            <section class="section" id="faq">
+                <div class="section-header">
+                    <h2 class="section-title">Preguntas Frecuentes sobre LyCodeLife</h2>
+                    <p class="section-subtitle">Respuestas claras para ayudarte a dar el siguiente paso tecnológico en tu negocio.</p>
+                </div>
+                
+                <div class="faq-container">
+                    <!-- Pregunta 1 -->
+                    <details class="faq-item">
+                        <summary class="faq-summary">¿Qué diferencia a LyCodeLife de las demás agencias de desarrollo?</summary>
+                        <div class="faq-content">
+                            La diferencia se percibe en que trabajamos de manera responsable, directa y, sobre todo, <strong>desarrollamos herramientas de software B2B personalizadas exclusivamente para tus necesidades</strong>. No usamos plantillas genéricas; analizamos tu modelo de negocio y construimos soluciones a medida que resuelven problemas reales.
+                        </div>
+                    </details>
+
+                    <!-- Pregunta 2 -->
+                    <details class="faq-item">
+                        <summary class="faq-summary">¿Cómo puede la Inteligencia Artificial (IA) y la automatización mejorar mi empresa?</summary>
+                        <div class="faq-content">
+                            En LyCodeLife integramos modelos de lenguaje (LLMs) y creamos flujos de automatización que eliminan tareas manuales repetitivas. Esto permite procesar datos en segundos, optimizar la atención al cliente y reducir costos operativos, liberando tiempo para que tu equipo se enfoque en el crecimiento estratégico.
+                        </div>
+                    </details>
+
+                    <!-- Pregunta 3 -->
+                    <details class="faq-item">
+                        <summary class="faq-summary">¿Qué tipo de empresas se benefician de sus servicios de software a medida?</summary>
+                        <div class="faq-content">
+                            Nos especializamos en soluciones B2B (Business to Business). Ayudamos principalmente a pymes, startups y empresas tradicionales que buscan la transformación digital, desarrollando desde plataformas web y sistemas de gestión interna (ERP/CRM) hasta integraciones complejas de API.
+                        </div>
+                    </details>
+
+                    <!-- Pregunta 4 -->
+                    <details class="faq-item">
+                        <summary class="faq-summary">¿Cuánto tiempo toma construir una solución tecnológica personalizada?</summary>
+                        <div class="faq-content">
+                            El cronograma depende de la complejidad de la herramienta tecnológica. Sin embargo, en LyCodeLife aplicamos metodologías ágiles que nos permiten lanzar un Producto Mínimo Viable (MVP) funcional en pocas semanas, asegurando que empieces a ver el retorno de inversión (ROI) rápidamente sin esperas interminables.
+                        </div>
+                    </details>
+
+                    <!-- Pregunta 5 -->
+                    <details class="faq-item">
+                        <summary class="faq-summary">¿Ofrecen soporte continuo y optimización de hardware después del desarrollo?</summary>
+                        <div class="faq-content">
+                            Sí. Entendemos que el software necesita una base sólida. Además del desarrollo de la aplicación, brindamos mantenimiento continuo, soporte técnico y optimización de infraestructura de hardware para garantizar que tu ecosistema digital sea seguro, rápido y escalable a largo plazo.
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <footer style="padding-top: 50px; font-size: 1rem; color: var(--text-muted); text-align: center; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 40px;">
+                <p>© 2026 Shordy Simbaña. La informática es una nueva forma de vida.</p>
+            </footer>
+        </div>
+
+    </main>
+
+    <!-- === MODALES === -->
+    
+    <!-- Modal Imagen Lightbox (Galería y Proyecto) -->
+    <div id="imageModal" class="modal" onclick="closeModal('imageModal', event)">
+        <span class="close-btn" onclick="closeModal('imageModal', 'force')">&times;</span>
+        <span class="nav-btn prev-btn" id="prevBtn" onclick="navGallery(-1, event)">&#10094;</span>
+        <!-- SEO: Atributo alt agregado -->
+        <img class="modal-content" id="expandedImg" alt="Vista previa de imagen ampliada">
+        <span class="nav-btn next-btn" id="nextBtn" onclick="navGallery(1, event)">&#10095;</span>
+    </div>
+
+    <!-- Modal Formulario -->
+    <div id="contactModal" class="modal" onclick="closeModal('contactModal', event)">
+        <div class="form-box" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeModal('contactModal', 'force')">&times;</span>
+            <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.04em; color: var(--text-main);">Hola.</h2>
+            <p style="color: var(--text-muted); margin-bottom: 40px; font-size: 1.1rem;">Déjame tu correo y te escribo lo antes posible.</p>
+            
+            <input type="email" id="cEmail" class="form-input" placeholder="Tu correo" required>
+            <input type="text" id="cMsg" class="form-input" placeholder="¿En qué te puedo ayudar?" required>
+            
+            <button onclick="sendMail()" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 16px;">Enviar mensaje</button>
+        </div>
+    </div>
+
+    <!-- Modal Hoja de Vida -->
+    <div id="resumeModal" class="modal resume-modal" onclick="closeModal('resumeModal', event)">
+        <div style="width: 100%; max-width: 850px; display: flex; flex-direction: column;" onclick="event.stopPropagation()">
+            <!-- Controles Flotantes para el PDF -->
+            <div class="resume-controls">
+                <button onclick="downloadPDF()" class="btn-glow" style="margin: 0; padding: 10px 24px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Descargar en PDF
+                </button>
+                <span class="close-btn" onclick="closeModal('resumeModal', 'force')" style="position: static; font-size: 40px; color: #fff;">&times;</span>
+            </div>
+            
+            <!-- Documento Aislado para el PDF -->
+            <div id="resumeDocument" class="resume-document">
+                <div class="resume-header">
+                    <h2>Shordy Simbaña</h2>
+                    <p>Desarrollador de software B2B con IA | Estudiante Ing. en Sistemas</p>
+                    <div class="resume-contact">
+                        <!-- Iconos SVG con parámetros explicitos en Verde Jade (#10b981) -->
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> shordy46.58@gmail.com</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> +593 98 418 2834</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> linkedin.com/in/shordy</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> github.com/ShordyEA</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> shordyea.github.io</span>
+                    </div>
+                </div>
+
+                <div class="resume-body">
+                    <!-- Columna Izquierda (32%) -->
+                    <div class="resume-column-left">
+                        <div class="resume-section">
+                            <h3>Perfil Profesional</h3>
+                            <p class="resume-item-desc">Para mí, una computadora es más que una máquina; es un aliado para construir el futuro. Me apasiona conectar ideas sueltas y transformarlas en el software definitivo que tu negocio necesita. Tengo la visión para ver más allá y la creatividad para hacer que la tecnología trabaje a tu favor.</p>
+                        </div>
+                        
+                        <div class="resume-section">
+                            <h3>Servicios & Tech</h3>
+                            <div class="resume-skills-grid">
+                                <div>
+                                    <strong style="color: var(--accent); font-size: 0.9rem;">Especialidades:</strong>
+                                    <ul class="resume-list">
+                                        <li>Desarrollo de Software Full Stack</li>
+                                        <li>Integración de IA & Prompt Eng.</li>
+                                        <li>Automatización de Procesos B2B</li>
+                                        <li>Soporte y Optimización Hardware</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <strong style="color: var(--accent); font-size: 0.9rem;">Tecnologías:</strong>
+                                    <p class="resume-item-desc" style="margin-top: 4px;">HTML5, CSS3, Python, Linux, Windows OS, VS Code, Google Cloud, Microsoft 365, Google Gemini.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-section">
+                            <h3>Educación & Cert.</h3>
+                            <ul class="resume-list" style="padding-left: 0; list-style: none;">
+                                <li style="margin-bottom: 4px;"><strong>Ing. en Sistemas Computacionales</strong><br><span style="color: #6b7280;">UTEL Universidad (Estudiante)</span></li>
+                                <!-- NUEVA LÍNEA AÑADIDA AL PDF -->
+                                <li style="margin-bottom: 4px;"><strong>SEO para IA y Google</strong><br><span style="color: #6b7280;">BIG School / BIGSEO (2026)</span></li>
+                                <li style="margin-bottom: 4px;"><strong>Hackathon: Innovación E-commerce</strong><br><span style="color: #6b7280;">UTEL & Tiendanube (2026)</span></li>
+                                <li style="margin-bottom: 4px;"><strong>Informática Forense</strong><br><span style="color: #6b7280;">Academia Progenios (2025)</span></li>
+                                <li style="margin-bottom: 4px;"><strong>Customer Experience y Asistencia</strong><br><span style="color: #6b7280;">Remotos Academy / CertiProf (2025)</span></li>
+                                <li style="margin-bottom: 4px;"><strong>Intro. to Bionic Prostheses</strong><br><span style="color: #6b7280;">P4H Bionics (2024)</span></li>
+                                <li><strong>Gestión de RAEE (Parte 1 y 2)</strong><br><span style="color: #6b7280;">Ministerio del Ambiente (2025)</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha (Resto) -->
+                    <div class="resume-column-right">
+                        <div class="resume-section">
+                            <h3>Experiencia</h3>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <div>
+                                        <div class="resume-item-title">Fundador & Lead Developer</div>
+                                        <div class="resume-item-subtitle">LycodeLife</div>
+                                    </div>
+                                    <div class="resume-item-date">Presente</div>
+                                </div>
+                                <p class="resume-item-desc">Arquitectura B2B, desarrollo Full-Stack y automatización de procesos internos utilizando Inteligencia Artificial.</p>
+                            </div>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <div>
+                                        <div class="resume-item-title">Consultor Independiente</div>
+                                        <div class="resume-item-subtitle">Proyectos Autónomos</div>
+                                    </div>
+                                    <div class="resume-item-date">Presente</div>
+                                </div>
+                                <p class="resume-item-desc">Desarrollo UI/UX, integración de modelos de IA y optimización de hardware a medida para clientes locales.</p>
+                            </div>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <div>
+                                        <div class="resume-item-title">Asistente de Archivo</div>
+                                        <div class="resume-item-subtitle">Ministerio del Ambiente (Jóvenes en Acción)</div>
+                                    </div>
+                                    <div class="resume-item-date">Feb 2025</div>
+                                </div>
+                                <p class="resume-item-desc">Trabajé en el área de archivo, desarrollando habilidades para gestionar, crear y ordenar documentos históricos de gran importancia.</p>
+                            </div>
+                        </div>
+
+                        <div class="resume-section">
+                            <h3>Proyectos Destacados</h3>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <div>
+                                        <div class="resume-item-title">WhatsApp Life (by LyCodeLife)</div>
+                                        <div class="resume-item-subtitle">Automatización B2B & Sistema Anti-Ban</div>
+                                    </div>
+                                    <div class="resume-item-date">Reciente</div>
+                                </div>
+                                <ul class="resume-list">
+                                    <li>Automatización de envíos masivos en WhatsApp sin utilizar API.</li>
+                                    <li>Manejo de secuencias de mensajes con soporte multimedia total.</li>
+                                    <li>Importación de contactos desde bases de datos e implementación de plantillas personalizadas.</li>
+                                </ul>
+                            </div>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <div>
+                                        <div class="resume-item-title">Hackathon - UTEL / Tiendanube</div>
+                                        <div class="resume-item-subtitle">Lead Developer & Project Manager</div>
+                                    </div>
+                                    <div class="resume-item-date">Marzo 2026</div>
+                                </div>
+                                <ul class="resume-list">
+                                    <li>Liderazgo técnico en frontend y arquitectura asegurando la calidad del código.</li>
+                                    <li>Uso de Gemini CLI para agilizar el desarrollo y la toma de decisiones bajo presión.</li>
+                                    <li>Diseño de la arquitectura de "NubIA", asistente inteligente para emprendedores.</li>
+                                </ul>
+                            </div>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <div>
+                                        <div class="resume-item-title">Digitalización Histórica - MAATE</div>
+                                        <div class="resume-item-subtitle">Gestión de Datos & Archivo</div>
+                                    </div>
+                                    <div class="resume-item-date">Proyecto (4 meses)</div>
+                                </div>
+                                <ul class="resume-list">
+                                    <li>Rescate patrimonial y digitalización de documentos que datan de 1850.</li>
+                                    <li>Construcción de base de datos consolidando registros e historiales de vida.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // === LÓGICA DE LA HOJA DE VIDA (PDF & MODAL) ===
+        function openResumeModal() {
+            document.getElementById('resumeModal').classList.add('active');
+        }
+
+        function downloadPDF() {
+            // 1. Seleccionamos el documento original
+            const originalElement = document.getElementById('resumeDocument');
+            
+            // 2. Creamos un CLON EXACTO para manipularlo sin dañar tu vista en el celular
+            const element = originalElement.cloneNode(true);
+            
+            // 3. Le añadimos una clase especial que anula el @media query del celular y fuerza la cuadrícula de PC
+            element.classList.add('pdf-export-mode'); 
+            
+            // 4. FIX: Envolver el clon en un contenedor posicionado absolutamente en la esquina superior izquierda.
+            // Esto evita que los márgenes del body o el scroll en el móvil distorsionen las coordenadas de la foto.
+            const tempContainer = document.createElement('div');
+            tempContainer.style.position = 'absolute';
+            tempContainer.style.left = '0'; // Forzar posición a la izquierda sin valores negativos
+            tempContainer.style.top = '0';
+            tempContainer.style.width = '794px'; 
+            tempContainer.style.minWidth = '794px'; 
+            tempContainer.style.zIndex = '-9999'; // Lo enviamos detrás de todo
+            tempContainer.style.opacity = '0';    // Lo hacemos invisible sin usar display:none (para que html2canvas lo lea)
+            tempContainer.style.pointerEvents = 'none';
+            tempContainer.style.background = '#ffffff';
+            
+            tempContainer.appendChild(element);
+            document.body.appendChild(tempContainer);
+            
+            // Opciones para la librería html2pdf
+            const opt = {
+                margin:       0,
+                filename:     'Hoja_de_Vida_Shordy_Simbana.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { 
+                    scale: 2, 
+                    useCORS: true, 
+                    letterRendering: true,
+                    // FIX: Configuraciones clave para evitar el corte o márgenes fantasma en celulares
+                    scrollY: 0,
+                    scrollX: 0, // Ignorar si el usuario ha hecho scroll hacia los lados
+                    x: 0,       // Indicar explícitamente que la "foto" arranca desde el pixel 0 en X
+                    y: 0,       // Y arranca desde el pixel 0 en Y
+                    windowWidth: 794, // Simular que estamos en un monitor
+                    width: 794        // Obligar al lienzo interno a medir exactamente 794px de ancho
+                },
+                jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            
+            // Generamos el PDF usando el CLON configurado como PC
+            html2pdf().set(opt).from(element).save().then(() => {
+                // Al terminar, eliminamos el clon del código sin dejar rastro
+                document.body.removeChild(tempContainer);
+                console.log("PDF descargado correctamente desde cualquier dispositivo.");
+            }).catch(err => {
+                // En caso de error, también limpiar el DOM
+                document.body.removeChild(tempContainer);
+                console.error("Error al generar PDF: ", err);
+            });
+        }
+
+        // === EFECTO DE LUZ EN EL RATÓN (Bento Hover) ===
+        function handleMouseMove(e, element) {
+            const rect = element.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            element.style.setProperty('--mouse-x', `${x}px`);
+            element.style.setProperty('--mouse-y', `${y}px`);
+        }
+
+        // === LÓGICA DE CERTIFICADOS Y GALERÍA ===
+        const certItems = Array.from(document.querySelectorAll('.cert-item'));
+        const previewImg = document.getElementById('mainPreviewImg');
+        let currentGalleryIndex = 0;
+
+        certItems.forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                certItems.forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+                
+                const newSrc = this.getAttribute('data-img');
+                previewImg.style.opacity = '0';
+                
+                setTimeout(() => {
+                    previewImg.src = newSrc;
+                    previewImg.onerror = () => { previewImg.src = 'https://placehold.co/600x400/0a1813/10b981?text=Certificado'; };
+                    previewImg.style.opacity = '1';
+                }, 150);
+            });
+        });
+
+        function toggleCerts() {
+            const hiddens = document.querySelectorAll('.hidden-cert');
+            const btn = document.getElementById('btnToggleCerts');
+            
+            if (hiddens[0].style.display === 'none') {
+                hiddens.forEach(el => { el.style.display = 'flex'; });
+                btn.innerText = '- Ver menos';
+            } else {
+                hiddens.forEach(el => { el.style.display = 'none'; });
+                btn.innerText = '+ Ver 4 credenciales más'; // Actualizado el número de credenciales
+            }
+        }
+
+        // === LIGHTBOX (Para proyectos individuales sin flechas) ===
+        function openSingleImage(src) {
+            const modal = document.getElementById('imageModal');
+            const img = document.getElementById('expandedImg');
+            img.src = src;
+            // Ocultamos las flechas ya que es solo 1 imagen
+            document.getElementById('prevBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'none';
+            modal.classList.add('active');
+        }
+
+        // === LIGHTBOX CON NAVEGACIÓN (Para certificados) ===
+        function openGallery(element) {
+            currentGalleryIndex = certItems.indexOf(element);
+            const src = element.getAttribute('data-img');
+            const modal = document.getElementById('imageModal');
+            const img = document.getElementById('expandedImg');
+            img.src = src;
+            // Aseguramos que las flechas se muestren
+            document.getElementById('prevBtn').style.display = 'block';
+            document.getElementById('nextBtn').style.display = 'block';
+            modal.classList.add('active');
+        }
+
+        function openLightboxPreview() {
+            const activeItem = document.querySelector('.cert-item.active');
+            currentGalleryIndex = certItems.indexOf(activeItem);
+            
+            const modal = document.getElementById('imageModal');
+            const img = document.getElementById('expandedImg');
+            img.src = previewImg.src;
+            // Aseguramos que las flechas se muestren
+            document.getElementById('prevBtn').style.display = 'block';
+            document.getElementById('nextBtn').style.display = 'block';
+            modal.classList.add('active');
+        }
+
+        function navGallery(direction, event) {
+            event.stopPropagation(); // Evita que se cierre el modal al hacer click en las flechas
+            currentGalleryIndex += direction;
+            
+            if (currentGalleryIndex < 0) currentGalleryIndex = certItems.length - 1;
+            if (currentGalleryIndex >= certItems.length) currentGalleryIndex = 0;
+            
+            const newSrc = certItems[currentGalleryIndex].getAttribute('data-img');
+            document.getElementById('expandedImg').src = newSrc;
+        }
+
+        // === MODALES GENÉRICOS ===
+        function openContact() { document.getElementById('contactModal').classList.add('active'); }
+
+        function closeModal(modalId, event) {
+            const modal = document.getElementById(modalId);
+            if (event === 'force' || event.target === modal || event.target.className.includes("close-btn")) {
+                modal.classList.remove("active");
+            }
+        }
+
+        function sendMail() {
+            const email = document.getElementById('cEmail').value;
+            const msg = document.getElementById('cMsg').value;
+            if(!email || !msg) return alert("Completa todos los campos, por favor.");
+            
+            const subject = encodeURIComponent("Contacto Portafolio");
+            const body = encodeURIComponent(`De: ${email}\n\nMensaje:\n${msg}`);
+            window.location.href = `mailto:shordy46.58@gmail.com?subject=${subject}&body=${body}`;
+            closeModal('contactModal', 'force');
+        }
+    </script>
+</body>
+</html>
