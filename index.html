@@ -359,12 +359,13 @@
             border-color: rgba(16, 185, 129, 0.4);
         }
         .hero-cta-card img {
-            width: 180px;
-            height: 140px;
+            width: 160px;
+            height: 160px;
             border-radius: var(--radius-md);
-            object-fit: cover;
+            object-fit: contain;
             flex-shrink: 0;
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            background: rgba(0, 0, 0, 0.2); /* Le da un fondo sutil si el logo tiene transparencia */
         }
         .hero-cta-content h3 {
             font-size: 1.3rem;
@@ -895,7 +896,7 @@
             
             /* Tarjeta LyCodeLife Móvil */
             .hero-cta-card { flex-direction: column; text-align: center; padding: 24px; margin: 0 0 40px 0; }
-            .hero-cta-card img { width: 100%; height: 180px; }
+            .hero-cta-card img { width: 140px; height: 140px; object-fit: contain; }
 
             .certs-container { grid-template-columns: 1fr; gap: 24px; }
             .cert-preview-area { display: none; }
